@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/cristian634/KoreaenBackHand/issues"
   },
-  "homepage": "https://github.com/cristian634/KoreaenBackHand#readme"
+  "homepage": "https://github.com/cristian634/KoreaenBackHand#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.20",
+    "mongoose-unique-validator": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  }
 }
