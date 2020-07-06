@@ -1,33 +1,38 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Nav, NavItem, NavLink, Button, Container } from 'reactstrap';
+import { Nav, NavItem, NavLink, Button, Container, Row, Col } from 'reactstrap';
+import '../style/style.css'
 
-const bgImg = `${process.env.PUBLIC_URL}/images/Website_BG_V1.jpg`;
 
 const Homepage = (props) => {
+
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
-    const divStlye = {
-        backgroundImage: `url(${bgImg})`,
-        width: "fit-content(100%)"
-    }
+    
     return (
-        <div className="App" style={divStlye}>
-            <p>Korean Back Hand</p>
-            <Container>
-                <Nav>
-                    <img src={`${process.env.PUBLIC_URL}/images/Background.png`} style={{ width: "100%" }} />
-                    <NavItem>
-                        <Button><img src={`${process.env.PUBLIC_URL}/images/Home.png`} alt="home" style={{ width: "25%" }} /></Button>
-                        <Button><img src={`${process.env.PUBLIC_URL}/images/Blog.png`} alt="home" /></Button>
-                        <Button><img src={`${process.env.PUBLIC_URL}/images/Merch.png`} alt="home" /></Button>
-                        <Button><img src={`${process.env.PUBLIC_URL}/images/Stream.png`} alt="home" /></Button>
-                        <Button><img src={`${process.env.PUBLIC_URL}/images/Leaderboards.png`} alt="home" /></Button>
-                    </NavItem>
+        <div >
+            {/* <p>Korean Back Hand</p> */}
+            {/* <Container > */}
+                <Nav className="navBar">
+                    <Row  className="justify-content-md-center">
+                        <Col md="auto">
+                            <h1 className="navBarText"> Korean Back Hand! </h1>
+                        </Col>
+                        {/* <img src={`${process.env.PUBLIC_URL}/images/Background.png`} style={{ width: "100%" }} /> */}
+                        <Col md="auto">
+                            <img src={require('../images/Home.png')} alt="home" className="navImg" />
+                            <img src={require('../images/Blog.png')} alt="Blog" className="navImg" />
+                            <img src={require('../images/Merch.png')} alt="Merch" className="navImg" />
+                            <img src={require('../images/Stream.png')} alt="Stream" className="navImg" />
+                            <img src={require('../images/Leaderboards.png')} alt="Leader Boards" className="navImg" />
+                        </Col>
+                    </Row>
+
                 </Nav>
-            </Container>
+            
+            {/* </Container> */}
 
         </div>
     )

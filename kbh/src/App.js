@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"; 
 import Home from "./pages/Home.js"
+import '../src/style/style.css'
+
 
 class App extends Component {
   constructor(props){
@@ -12,9 +14,9 @@ class App extends Component {
 
   }
   render(){
-    console.log(this.state); 
+    // console.log(this.state); 
     return (
-      <div>
+      <div className = "app">
         <Router>
           <Route exact path ="/" component={Home} />
         </Router>
