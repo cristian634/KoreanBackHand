@@ -1,45 +1,88 @@
-body{
-    background-image: url('../images/Website_BG_V1.jpg');
-    
-    width: 100%;
-    height: auto;
-    /* vertical-align: "top"; */
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position: relative; 
-    margin: 0;
-    display: inline-block;
+body {
+  background-image: url("../images/Website_BG_V1.jpg");
+
+  width: 100%;
+  height: auto;
+  /* vertical-align: "top"; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  display: inline-block;
 }
 
-.navBar{
-    background-image: url('../images/Background.png'); 
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    margin: 0;
-    align-self: center;
-    display: inline-block;
-    /* justify-self: center; */
+.bannerImg{
+  background-image: url("../images/KBH_BANNER.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20%;
+
+}
+.navBar {
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  margin: 0;
+  align-self: center;
+  display: inline-block;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  /* justify-self: center; */
 }
 
-.navBarText{
-    /* float: left;  */
-    padding-top: 20px;
-    text-align: center;
-    justify-content: center;
+.navBarText {
+  /* float: left;  */
+  padding-top: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
-.navImg{
-    /* align-content: right; */
-    padding: 5px;
-    padding-top: 10px;
-    max-height: 100px;
-    max-width: 100%;
-    display: inline-block;
+.navImg {
+  /* align-content: right; */
+  padding: 0px;
+  padding-top: 0px;
+  max-height: 100px;
+  max-width: 100%;
+  display: inline-block;
 }
 
-.navButtons{
-    align-items: right;
-    align-content: center;
+.navImg:hover {
+  /* width: 150px;
+    height: 150px; */
+
+  box-shadow: 0 0 60px 30px #fff, 
+  /* inner white */ 0 0 100px 60px #f0f,
+    /* middle magenta */ 0 0 140px 90px #0ff; /* outer cyan */
+}
+
+.navButtons {
+  align-items: right;
+  align-content: center;
+}
+
+.mainContent {
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: grey;
+  outline-color: black;
+}
+
+.headWithBackground {
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
