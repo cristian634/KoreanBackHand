@@ -1,9 +1,10 @@
 body {
-  background-image: url("../images/Website_BG_V1.jpg");
+  background-image: url("../images/Website_BG_v2.jpg");
 
   width: 100%;
   height: auto;
   /* vertical-align: "top"; */
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -21,17 +22,24 @@ body {
   padding-bottom: 20%;
 
 }
+
+.navHolder{
+  width: 20%;
+  height: 15%;
+}
 .navBar {
-  background-image: url("../images/Background.png");
+  /* background-image: url("../images/Background.png"); */
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 350px;
   background-repeat: no-repeat;
-  margin: 0;
+  /* margin: 0; */
   align-self: center;
   display: inline-block;
   padding-top: 2%;
   padding-bottom: 3%;
+  padding-left: 5%;
+  /* margin-top: 400px; */
   /* justify-self: center; */
 }
 
@@ -67,9 +75,10 @@ body {
 
 .mainContent {
   margin-top: 2%;
-  margin-right: 5%;
-  margin-left: 5%;
-  background-color: grey;
+  margin-right: 17%;
+  margin-left: 17%;
+  color: white;
+  /* background-color: grey; */
   outline-color: black;
 }
 
